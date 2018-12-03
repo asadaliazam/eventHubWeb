@@ -1,0 +1,33 @@
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+}
+
+.geosuggest__item--active {
+  background: #267dc0;
+  color: #fff;
+}
+
+.CreateEvent {
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.gridDesign {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (min-width:700px) {
+  .CreateEvent {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .CreateEvent form {
+    max-width: 500px;
+    margin: auto;
+  }
+}

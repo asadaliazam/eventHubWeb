@@ -1,0 +1,83 @@
+h1, h2, h3, h4, h5, h6, p, a {
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.defaultColor{
+  color: black;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  margin-top: 10px;
+  border-color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar .dropdown .dropdown-menu li a {
+  background-color: white;
+  color: black;
+}
+
+.navbar .dropdown .dropdown-menu li a:hover {
+  background-color: #ea526f;
+}
+
+.navbar li a {
+  background-color: #ea526f;
+  border-radius: 10%;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.defaultBackground{
+  background-color: black;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.navbar-brand {
+  padding: 0;
+  padding-left: 15px;
+}
+
+.home-logo{
+  width: 18rem;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: inherit;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+      width: inherit;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+      width: inherit;
+  }
+}

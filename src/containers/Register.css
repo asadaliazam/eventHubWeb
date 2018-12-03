@@ -1,0 +1,27 @@
+.calendars{
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: white;
+  text-align: center;
+}
+
+.react-add-to-calendar {
+  margin-top: 25px;
+}
+
+.react-add-to-calendar__dropdown ul {
+  padding: 0px;
+}
+
+.react-add-to-calendar__dropdown ul li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+@media screen and (min-width:530px) {
+  .calendars {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

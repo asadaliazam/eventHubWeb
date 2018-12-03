@@ -1,0 +1,195 @@
+/* CSS */
+h5 {
+  color: #ea526f;
+  font-size: 16pt;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  min-width: initial;
+  min-height: initial;
+}
+
+.navbar-default {
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+ }
+ 
+ .bannerText {
+  z-index: 10;
+  background-image: linear-gradient(to left, #ea526f , #02b3e4);
+  opacity: 0.6
+ }
+
+ .bannerText .textContainer {
+  background-color: rgba(161, 159, 166, 0.4);
+ }
+
+ .textContainer h1 {
+   display: block;
+   color: white;
+ }
+
+ .bannerImage,
+.bannerText {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* END */
+
+
+
+
+
+.react-date-picker {
+  height: 50px;
+  flex-direction: row-reverse;
+}
+
+.Video h4, .Features h4, .Mock-up h4 {
+  font-weight: 600;
+}
+
+.content {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  min-height: 65vh;
+}
+
+.body {
+  padding: 4%;
+  min-height: 85vh;
+  padding-top: 0px;
+  padding-bottom: 1%;
+}
+
+.buttontype {
+  color: white;
+  background-color: #02b3e4;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.buttontype:hover {
+    color: black;
+    text-decoration: none;
+}
+.discover {
+  margin:auto;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.Events {
+  border: 1px solid #02b3e4;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.content h3 {
+  grid-column: 1/-1;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.mid-nav, .create-event {
+  background-color: white;
+  border: 1px solid #02b3e4;
+}
+
+.intro {
+  display: none;
+}
+
+.intro p{
+  text-align: left;
+}
+
+.event-description h5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.event-description p {
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.create-event{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, rgba(2,179,228, 0.2), rgba(234,82,111, 0.2))
+}
+
+.Video, .Features, .Mock-up {
+  border-top: 1px solid black;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+
+
+
+
+
+.mid-nav {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-gap:10px;
+}
+
+.web-video {
+  max-width: 640px;
+  margin: auto;
+}
+
+@media screen and (min-width: 770px) {
+
+  .body{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  
+
+  .Features img, .Mock-up img {
+    height: 500px;
+  }
+
+
+  .intro {
+    display: block;
+    margin: 15px 0px;
+  }
+
+  .Events {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+  }
+
+}

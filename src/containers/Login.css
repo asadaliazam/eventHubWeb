@@ -1,0 +1,56 @@
+.Login {
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.new-log {
+  margin-top: 2%;
+}
+
+.new-log li {
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.new-log li a {
+  text-decoration: none;
+  color: white;
+  background-color: #02b3e4;
+  border-radius: 6px;
+  padding: 4px 22px;
+  font-size: 16px;
+  max-width: 100px;
+}
+
+button {
+  margin-top: 10px;
+  color: black;
+  background-color: #02b3e4;
+  border-radius: 8%;
+  padding: 10px 10px;
+  max-width: 290px;
+}
+
+@media screen and (min-width:530px) {
+  .Login {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Login form {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .new-log {
+    display: grid;
+    grid-template-columns: 200px 2fr;
+  }
+
+  .new-log li {
+    text-align: left;
+  }
+}

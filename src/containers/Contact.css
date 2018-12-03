@@ -1,0 +1,37 @@
+.sub-body {
+  background-image: linear-gradient(to bottom right, rgba(2,179,228, 0.2), rgba(234,82,111, 0.2));
+  min-height: 85vh;
+  padding: 2%;
+}
+
+.Contact {
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.LoaderButton {
+  color: white;
+  background-color: #02b3e4;
+  max-width:100px;
+  max-height: 30px;
+  margin: auto;
+}
+
+.btn-lg {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+@media screen and (min-width:530px) {
+  .Contact {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Contact form {
+    max-width: 500px;
+    margin: auto;
+  }
+}
