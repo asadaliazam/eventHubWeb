@@ -253,6 +253,8 @@ h5 {
   border-radius: 1rem;
   background-color: #ffffff;
   margin: 0rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 
   
 }
@@ -333,6 +335,8 @@ h5 {
 
   .Events {
     margin: 1rem;
+    margin-left: 0rem;
+  margin-right: 0rem;
   }
 
   

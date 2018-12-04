@@ -19,10 +19,12 @@ import moment from 'moment';
                   <img src={`${event.eventPicture}`} alt="event" />
                 </div>
                 <div className="event-description">
-                  <h5>{event.eventTitle}</h5>
                   <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
-                  <p>{event.eventAddress}, {event.eventLocation}</p>
-                </div>
+                  <p>{event.eventAddress} {event.eventLocation}</p>
+                    <h5>{event.eventTitle}</h5>
+                    <p>Tickets Left: {event.remainingTickets}</p>
+                    
+                  </div>
               </div>
             </a>
           )}
