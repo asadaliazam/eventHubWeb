@@ -10,6 +10,7 @@ import "./Signup.css";
 import { Auth } from "aws-amplify";
 import axios from 'axios';
 import {reactLocalStorage} from 'reactjs-localstorage';
+import loginImage from '../images/login.jpg';
 
 
 export default class Signup extends Component {
@@ -148,6 +149,19 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
     return (
       <div className="sub-body">
         <div className="SignUp">
+
+        <div className="LoginBackground">
+        <div class="gradient-login"></div>
+
+        <div className="Loginimage">
+        
+        <img src={loginImage}/>
+
+        </div>
+
+
+          <div className="LoginContent">
+
           <h3>Sign Up</h3>
           <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="name" bsSize="large">
@@ -194,6 +208,8 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
               loadingText="Signing up…"
             />
           </form>
+          </div>
+          </div>
         </div>
       </div>
     );

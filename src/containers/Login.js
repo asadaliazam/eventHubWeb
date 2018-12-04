@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { FormGroup, FormControl, ControlLabel, NavItem } from "react-bootstrap";
+import { FormGroup, FormControl, ControlLabel, NavItem, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import "./Login.css";
 import { Auth } from "aws-amplify";
 import {reactLocalStorage} from 'reactjs-localstorage';
 import axios from 'axios';
+import loginImage from '../images/login.jpg';
 
 
 
@@ -59,6 +60,19 @@ export default class Login extends Component {
     return (
       <div className="sub-body">
         <div className="Login">
+
+        <div className="LoginBackground">
+        <div class="gradient-login"></div>
+
+        <div className="Loginimage">
+        
+        <img src={loginImage}/>
+
+        </div>
+
+
+          <div className="LoginContent">
+
           <h3>Sign In</h3>
           <form onSubmit={this.handleSubmit}>
             <FormGroup controlId="email" bsSize="large">
@@ -93,11 +107,21 @@ export default class Login extends Component {
             />
             <FormGroup className="new-log" controlId="new-log" bsSize="large">
               <ControlLabel>New to EventHub?</ControlLabel>
-              <LinkContainer to="/signup">
-                <NavItem>Sign Up</NavItem>
+              
+
+              <LinkContainer  to="/signup">
+
+              <a>Sign Up</a>
               </LinkContainer>
+              
+              
+              
+                
             </FormGroup>
+
           </form>
+          </div>
+          </div>
         </div>
       </div>
     );

@@ -22,16 +22,32 @@ h5 {
   padding-top: 5px;
   padding-bottom: 5px;
 }
- 
- 
- .bannerText {
-  z-index: 10;
-  position: abs;
-  opacity: 0.7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
  }
+ 
+ .gradient-overlay {
+  
+  background-image: linear-gradient(to left, #ea526f , #02b3e4);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+ }
+
+.bannerText{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  z-index: 10;
+  
+}
 
  .textContainer h1 {
    display: block;

@@ -25,6 +25,7 @@ import Calendar from './Calendar';
 
 
 
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -83,16 +84,15 @@ export default class Home extends Component {
     return (
       <React.Fragment>
         <div className="banner">
-          <div className = "bannerImage">
-           <div className="imageContainer">         
-             <img src={banner}/>
-          </div>
+        <div class="gradient-overlay"></div>
+        <div className = "bannerImage">
+         
+        <img src={banner}/>
         </div>
         <div className="bannerText">
-          <div className = "textContainer">
-           <h1>Event Hub</h1>
-           <p> Never miss an event! </p>
-          </div>
+        <div className = "textContainer">
+        <h1>Asad Suck!</h1>
+        </div>
         </div>
         
         </div>

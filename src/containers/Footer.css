@@ -1,6 +1,7 @@
 .Footer {
   margin-bottom: 5px;
-  background-color: #ea526f;
+  
+  
 }
 
 .Footer .nav {
@@ -12,6 +13,53 @@
 
 .Footer .nav li a {
   padding: 0;
+}
+
+.FooterBottom{
+  background-color: #ea526f;
+}
+
+
+.FooterBottom a{
+  color: white;
+  z-index: 100;
+}
+
+.FooterTop img{
+  width: 100%;
+  margin: auto;
+}
+
+.FooterTop{
+  position: relative;
+
+  
+ 
+}
+
+.FooterTopImg{
+
+  
+  
+  width: 100%;
+  bottom: 0;
+
+  position: absolute;
+  top: 0;
+  
+}
+
+.FooterTopImgPic{
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.FooterTopImgPic img{
+  z-index: 12;
+  margin: 0;
+  align-self: flex-end;
 }
 
 .item1 {

@@ -51,6 +51,22 @@ h3 {
 .container {
     padding-right: 0px;
     padding-left: 0px;
+    
+}
+
+.App{
+
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+.Footer{
+  position: absolute;
+  bottom: 0;
 }
 
 .navbar-brand {

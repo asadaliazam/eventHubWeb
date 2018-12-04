@@ -1,8 +1,4 @@
-.sub-body {
-  background-image: linear-gradient(to bottom right, rgba(2,179,228, 0.2), rgba(234,82,111, 0.2));
-  min-height: 85vh;
-  padding: 2%;
-}
+
 
 .Contact {
   max-width: 700px;
@@ -14,8 +10,7 @@
 .LoaderButton {
   color: white;
   background-color: #02b3e4;
-  max-width:100px;
-  max-height: 30px;
+  
   margin: auto;
 }
 
