@@ -1,19 +1,64 @@
 import React, { Component } from 'react';
 import { Nav, NavItem } from 'react-bootstrap';
 import './Footer.css';
+import footerTopImage from '../images/footer1.png';
 
 class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <Nav justified>
-         <NavItem className="item1" eventKey={1} href="/about">
+      
+
+<div className="FooterTop">
+
+<div className="FooterTopImg">
+
+</div>
+
+<div className="FooterTopImgPic">
+
+
+<img src={footerTopImage}/>
+
+
+
+
+<div className="FooterBottom">
+
+
+
+
+    
+<a className="item1" eventKey={1} href="/about">
            About Us
-         </NavItem>
-         <NavItem className="item2" eventKey={2} href="/contact">
+         </a>
+         <a className="item2" eventKey={2} href="/contact">
            Contact Us
-         </NavItem>
-       </Nav>
+         </a>     
+      
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
       </div>
     );
   }

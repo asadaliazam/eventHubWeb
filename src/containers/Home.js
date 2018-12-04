@@ -16,6 +16,7 @@ import { Redirect } from 'react-router';
 import {reactLocalStorage} from 'reactjs-localstorage';
 import banner from '../images/banner1.jpg';
 
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -74,12 +75,14 @@ export default class Home extends Component {
     return (
       <React.Fragment>
         <div className="banner">
+        <div class="gradient-overlay"></div>
         <div className = "bannerImage">
+         
         <img src={banner}/>
         </div>
         <div className="bannerText">
         <div className = "textContainer">
-        <h1>We Suck!</h1>
+        <h1>Asad Suck!</h1>
         </div>
         </div>
         

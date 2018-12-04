@@ -1,8 +1,6 @@
 .Login {
-  max-width: 700px;
-  padding: 15px;
-  border-radius: 3%;
-  background-color: white;
+  width: 100%;
+  margin: auto;
 }
 
 .new-log {
@@ -14,6 +12,18 @@
   margin-top: 10px;
   text-align: center;
 }
+
+
+
+.gradient-login {
+  
+  background-image: linear-gradient(to left, #ea526f , #02b3e4);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+ }
 
 .new-log li a {
   text-decoration: none;
@@ -31,13 +41,46 @@ button {
   background-color: #02b3e4;
   border-radius: 8%;
   padding: 10px 10px;
-  max-width: 290px;
+ 
+}
+
+.Loginimage img{
+  margin: auto;
+  width: 100%;
+  
+}
+
+.LoaderButton,.buttonload,.btn,.btn-lg,.btn-default,.btn-block{
+  width: 40%;
+  color: white;
+  background-color: #02b3e4;
+}
+
+
+
+.LoginBackground{
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginContent{
+  position: absolute;
+  align-self: center;
+  margin: auto;
+  background-color: white;
+  width: 40%;
+  border-radius: 2%;
+
 }
 
 @media screen and (min-width:530px) {
   .Login {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: auto;
   }
 
   .Login form {
@@ -46,8 +89,13 @@ button {
   }
 
   .new-log {
-    display: grid;
+    
     grid-template-columns: 200px 2fr;
+    
+  }
+
+  .new-log label{
+    margin: 1%;
   }
 
   .new-log li {

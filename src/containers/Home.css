@@ -21,17 +21,27 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  position: relative;
  }
  
- .bannerText {
-  z-index: 10;
+ .gradient-overlay {
+  
   background-image: linear-gradient(to left, #ea526f , #02b3e4);
-  opacity: 0.6
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
  }
 
- .bannerText .textContainer {
-  background-color: rgba(161, 159, 166, 0.4);
- }
+.bannerText{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  z-index: 10;
+  
+}
 
  .textContainer h1 {
    display: block;
