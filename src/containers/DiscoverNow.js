@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import axios from 'axios';
-import "./DiscoverNow.css"
+import "./DiscoverNow.css";
+import meetup from '../images/meetup.jpg';
+
 
 class DiscoverNow extends Component {
   constructor(props) {
     super(props)
     this.state = {
       event_list : [],
+      meetup_events : [],
     }
   }
 
@@ -19,6 +22,17 @@ class DiscoverNow extends Component {
       .then(res => {
         this.setState({event_list : res.data})
         console.log(res.data);
+      })
+    .catch((error) => {
+      console.log(error);
+    });
+
+    axios.get(`http://cors-anywhere.herokuapp.com/https://api.meetup.com/find/upcoming_events?photo-host=secure&page=10&end_time_range=20%3A00%3A00&sig_id=263681792&radius=20&start_time_range=16%3A00%3A00&sig=022e48d732ed0fdde339029a65036a8cc80a7c1b
+    `)
+      .then(res => {
+        console.log(res.data.events);
+        this.setState({meetup_events : res.data.events})
+
       })
     .catch((error) => {
       console.log(error);
@@ -43,6 +57,22 @@ class DiscoverNow extends Component {
                 </div>
               </div>
             </a>
+          )}
+
+          {this.state.meetup_events.map(event =>
+            <a key={event.id} href={event.link} target="_blank">
+            <div className="Events">
+                <div className="event-image">
+                  <img src={meetup} alt="event" />
+                </div>
+                <p>{event.name}</p>
+                <p>{event.venue.address_1}</p>
+                <p>{event.venue.city}, {event.venue.state}, {event.venue.localized_country_name}</p>
+              </div>
+            
+          </a>
+            
+           
           )}
         </div>
       </div>
