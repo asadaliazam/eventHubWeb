@@ -4,26 +4,36 @@ h5 {
   font-size: 16pt;
 }
 
+.body {
+  width: 90%;
+  margin: auto;
+}
+
+.events {
+  margin-bottom: 19rem;
+  background-color: #eef7fa;
+}
+
+
 .banner img {
   max-width: 100%;
   height: auto;
   min-width: initial;
   min-height: initial;
+ }
 
-}
+ .bannerForHome img {
+  max-width: 100%; 
+ }
 
-.imageContainer {
-  background-image: linear-gradient(to left, #ea526f , #02b3e4) !important;
-
-}
-
-.navbar-default {
+ 
+ .navbar-default {
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.banner {
+ }
+ 
+ .banner, .bannerForHome {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -31,34 +41,53 @@ h5 {
  }
  
  .gradient-overlay {
-  
+ 
   background-image: linear-gradient(to left, #ea526f , #02b3e4);
-  opacity: 0.6;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   width: 100%;
   bottom: 0;
  }
-
-.bannerText{
+ 
+ .bannerText{
   display: flex;
   width: 100%;
   margin: auto;
   justify-content: center;
   z-index: 10;
-  
-}
+ 
+ }
 
+ .bannerTextForHome {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: baseline;
+  z-index: 10;
+ 
+ }
+ 
  .textContainer h1 {
    display: block;
    color: white;
  }
 
- .banner {
-   position: relative;
-
+ .textContainerForHome h1 {
+  display: block;
+  color: white;
+}
+ 
+ .bannerImage,
+ .bannerText,
+ .bannerTextForHome {
+  grid-column: 1;
+  grid-row: 1;
  }
 
+ 
+
+ 
  .content .Events img {
   max-width: 100%;
   height: auto;
@@ -69,8 +98,13 @@ h5 {
  }
 
  .event-description p:last-of-type {
-   margin-bottom: 2rem;
+   padding-bottom: 2rem;
  }
+
+ .event-description p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 
  .Events h5 {
@@ -89,14 +123,6 @@ h5 {
   margin: 2%;
 }
 
-.Features {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  justify-content: center;
-
-  
-}
 
 .Features img {
   max-width: 50%;
@@ -121,17 +147,12 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  border-radius: 0.5rem;
 
 
 }
 
-.Mockups {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  margin-bottom: 5rem;
-}
+
 .Mockups h1 {
   grid-column: 1/ -1;
 }
@@ -154,6 +175,39 @@ h5 {
 
 }
 
+
+.body{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: 4rem;
+}
+
+.Features {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  justify-content: center;
+}
+
+
+.Mockups {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+
+}
+
+
+
+
 /* END */
 
 
@@ -171,8 +225,6 @@ h5 {
 
 
 .body {
-  padding: 4%;
-  min-height: 85vh;
   padding-top: 0px;
   padding-bottom: 1%;
   background-color: #eef7fa;
@@ -200,6 +252,7 @@ h5 {
   margin-bottom: 5px;
   border-radius: 1rem;
   background-color: #ffffff;
+  margin: 0rem;
 
   
 }
@@ -214,7 +267,13 @@ h5 {
 
 .mid-nav, .create-event {
   background-color: white;
-  border: 1px solid #02b3e4;
+  opacity: 1;
+  width: 95%;
+  border-radius: 1rem;
+  margin: auto;
+  color: black;
+  margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .intro  {
@@ -224,7 +283,7 @@ h5 {
 .intro p {
   padding-top: 1rem;
   text-align: center;
-  max-width: 75%;
+  max-width: 85%;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -241,10 +300,15 @@ h5 {
 }
 
 .create-event{
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
-  background-image: linear-gradient(to bottom right, rgba(2,179,228, 0.2), rgba(234,82,111, 0.2))
+  background-image: linear-gradient(to bottom right, rgba(2,179,228, 0.2), rgba(234,82,111, 0.4))
+}
+
+.create-event p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -267,32 +331,31 @@ h5 {
 
 @media screen and (min-width: 770px) {
 
-  .body{
-    max-width: 1200px;
-    margin: auto;
+  .Events {
+    margin: 1rem;
   }
 
   
-
-
-
   .intro {
     display: block;
     margin: 15px 0px;
   }
 
-  .Events {
-    grid-template-columns: 1fr;
+  
+  .Features {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  .Mockups {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .content {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2.5rem;
   }
+  
 
-  .navbar-right {
-    margin-top: 10px;
-  }
+  
 
 }

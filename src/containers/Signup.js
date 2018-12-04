@@ -155,7 +155,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
 
         <div className="Loginimage">
         
-        <img src={loginImage}/>
+        <img src={loginImage} alt="login"/>
 
         </div>
 
@@ -176,7 +176,6 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
             <FormGroup controlId="email" bsSize="large">
               <ControlLabel>Email</ControlLabel>
               <FormControl
-                autoFocus
                 type="email"
                 value={this.state.email}
                 onChange={this.handleChange}

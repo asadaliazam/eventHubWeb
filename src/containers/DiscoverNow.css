@@ -1,0 +1,8 @@
+.body {
+    margin-bottom: 30rem;
+}
+
+.Events p:last-of-type {
+    padding-bottom: 2rem;
+    margin-top: 0.5rem;
+}

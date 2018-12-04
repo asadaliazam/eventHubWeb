@@ -7,14 +7,13 @@ import ReactPlayer from 'react-player'
 import image1 from '../images/event1.jpg';
 import image2 from '../image2.jpg';
 import image3 from '../image3.jpg';
-import features from '../features.jpg';
-import mockup from '../mock-ups.jpg';
-// import image4 from '../image4.jpg';
 import { Link } from "react-router-dom";
 import DatePicker from 'react-date-picker';
 import { Redirect } from 'react-router';
 import {reactLocalStorage} from 'reactjs-localstorage';
 import banner from '../images/banner1.jpg';
+import banner2 from '../images/banner2.jpg';
+
 import aggregtor from '../images/aggregtor.png';
 import personalization from '../images/personalization.png';
 import checkin from '../images/checkin.png';
@@ -84,14 +83,14 @@ export default class Home extends Component {
     return (
       <React.Fragment>
         <div className="banner">
-        <div class="gradient-overlay"></div>
+        <div className="gradient-overlay"></div>
         <div className = "bannerImage">
          
-        <img src={banner}/>
+        <img src={banner} alt="banner"/>
         </div>
         <div className="bannerText">
         <div className = "textContainer">
-        <h1>Asad Suck!</h1>
+        <h1>Event Hub</h1>
         </div>
         </div>
         
@@ -160,7 +159,7 @@ export default class Home extends Component {
           </div>
 
           <div className="Features">
-            <h1>Features</h1>
+            <h1>Our Main Features</h1>
             <div className="feature">
            
             <img src={aggregtor} alt="features"/>
@@ -184,7 +183,7 @@ export default class Home extends Component {
          
           
           <div className="Video">
-            <h1>About EventHub</h1>
+            <h1>Interview with the Developers</h1>
             <div className="web-video">
               <ReactPlayer url='https://www.youtube.com/watch?v=HCBK9zpL3J0&feature=youtu.be' controls width="100%" />
             </div>
@@ -215,9 +214,15 @@ export default class Home extends Component {
 
     return (
       <React.Fragment>
-        <div className="banner home-banner">
-          <Link className="buttontype discover" to={`/discover`}>Discover Now</Link>
+         <div className="bannerForHome">
+        <div className="gradient-overlay"></div>
+        <div className = "bannerImage">
+         
+        <img src={banner2} alt="banner"/>
         </div>
+        <div className="bannerTextForHome">
+        <div className = "textContainerForHome">
+        {/* <Link className="buttontype discover" to={`/discover`}>Discover Now</Link> */}
         <div className="mid-nav">
           <Search/>
           <DatePicker
@@ -228,6 +233,14 @@ export default class Home extends Component {
             
           />
         </div>
+        </div>
+        </div>
+        
+        </div>
+        {/* <div className="banner home-banner">
+          
+        </div> */}
+        
         <div className="body">
           <div className="content">
             <h3>Suggested Events</h3>
@@ -238,9 +251,11 @@ export default class Home extends Component {
                     <img src={`${event.eventPicture}`} alt="event" />
                   </div>
                   <div className="event-description">
+                  <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                  <p>{event.eventAddress} {event.eventLocation}</p>
                     <h5>{event.eventTitle}</h5>
-                    <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
-                    <p>{event.eventAddress} {event.eventLocation}</p>
+                    <p>Tickets Left: {event.remainingTickets}</p>
+                    
                   </div>
                 </div>
               </a>

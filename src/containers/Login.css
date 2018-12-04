@@ -68,13 +68,27 @@ button {
 }
 
 .LoginContent{
-  position: absolute;
   align-self: center;
   margin: auto;
   background-color: white;
-  width: 40%;
   border-radius: 2%;
+  margin-bottom: 5rem;
+  
+}
 
+.new-log {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.new-log label {
+  text-align: center;
+}
+
+.new-log a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media screen and (min-width:530px) {
@@ -83,22 +97,18 @@ button {
     margin: auto;
   }
 
-  .Login form {
-    max-width: 500px;
+  .LoginContent{
+    position: absolute;
+    align-self: center;
     margin: auto;
+    background-color: white;
+    border-radius: 2%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
-  .new-log {
-    
-    grid-template-columns: 200px 2fr;
-    
-  }
 
-  .new-log label{
-    margin: 1%;
-  }
 
-  .new-log li {
-    text-align: left;
-  }
 }

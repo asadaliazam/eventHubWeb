@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormGroup, FormControl, ControlLabel, NavItem, Button } from "react-bootstrap";
+import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import "./Login.css";
@@ -49,11 +49,11 @@ export default class Login extends Component {
     .catch((error) => {
       console.log(error);
     });
+    this.props.userHasAuthenticated(true);
     } catch (e) {
       alert(e.message);
       this.setState({ isLoading: false });
     }
-    this.props.userHasAuthenticated(true);
   }
 
   render() {
@@ -62,11 +62,11 @@ export default class Login extends Component {
         <div className="Login">
 
         <div className="LoginBackground">
-        <div class="gradient-login"></div>
+        <div className="gradient-login"></div>
 
         <div className="Loginimage">
         
-        <img src={loginImage}/>
+        <img src={loginImage} alt="login"/>
 
         </div>
 

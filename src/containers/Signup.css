@@ -1,6 +1,5 @@
 .SignUp, .Confirmation {
  
-  padding: 15px;
   border-radius: 3%;
   background-color: white;
 }
@@ -18,8 +17,4 @@ button img {
     margin-right: auto;
   }
 
-  .SignUp form, .Confirmation form {
-    max-width: 500px;
-    margin: auto;
-  }
 }
