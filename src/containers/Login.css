@@ -39,7 +39,7 @@ button {
   margin-top: 10px;
   color: black;
   background-color: #02b3e4;
-  border-radius: 8%;
+  border-radius: 1rem;
   padding: 10px 10px;
  
 }
@@ -71,7 +71,7 @@ button {
   align-self: center;
   margin: auto;
   background-color: white;
-  border-radius: 2%;
+  border-radius: 1rem;
   margin-bottom: 5rem;
   z-index: 1;
   
@@ -111,7 +111,7 @@ button {
     align-self: center;
     margin: auto;
     background-color: white;
-    border-radius: 2%;
+    border-radius: 1rem;
     padding-left: 7rem;
     padding-right: 7rem;
     padding-top: 3rem;

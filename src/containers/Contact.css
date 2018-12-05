@@ -3,7 +3,7 @@
 .Contact {
   max-width: 700px;
   padding: 15px;
-  border-radius: 3%;
+  border-radius: 0.5rem;
   background-color: white;
 }
 

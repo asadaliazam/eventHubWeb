@@ -69,7 +69,7 @@ class EventDetails extends Component {
                     </div>
                     <div className="event-details">
                       <h5>{event.eventTitle}</h5>
-                      <p>Starts on {moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                      <p>Starts on {moment.utc(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
                       <p>{event.eventAddress}, {event.eventLocation}</p>
                       <p>{event.remainingTickets} tickets left</p>
                       <form onSubmit = {this.registerEvent.bind(this)}>
