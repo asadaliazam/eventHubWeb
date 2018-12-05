@@ -78,7 +78,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
                       </div>
                       <div className="event-description">
                         <h5>{event.eventTitle}</h5>
-                        <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                        <p>{moment.utc(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
                         <p>{event.eventAddress}, {event.eventLocation}</p>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
                       </div>
                       <div className="event-description">
                         <h5>{event.eventTitle}</h5>
-                        <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                        <p>{moment.utc(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
                         <p>{event.eventAddress}, {event.eventLocation}</p>
                       </div>
                     </div>
@@ -120,7 +120,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
                       </div>
                       <div className="event-description">
                         <h5>{event.eventTitle}</h5>
-                        <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                        <p>{moment.utc(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
                         <p>{event.eventAddress}, {event.eventLocation}</p>
                       </div>
                     </div>

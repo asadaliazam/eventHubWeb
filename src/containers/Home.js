@@ -254,7 +254,7 @@ export default class Home extends Component {
                     <img src={`${event.eventPicture}`} alt="event" />
                   </div>
                   <div className="event-description">
-                  <p>{moment(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
+                  <p>{moment.utc(event.eventStartTime).format('MMMM DD, YYYY, hh:mm a')}</p>
                   <p>{event.eventAddress} {event.eventLocation}</p>
                     <h5>{event.eventTitle}</h5>
                     <p>Tickets Left: {event.remainingTickets}</p>
