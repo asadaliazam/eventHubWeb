@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import "./EventDetails.css";
+
 
 
 class ViewCheckedInDetails extends Component {
@@ -7,7 +8,6 @@ class ViewCheckedInDetails extends Component {
         super(props);
         this.state = {
             eventId: this.props.match.params.id,
-            users: [],
         };
     }
 
@@ -18,21 +18,23 @@ class ViewCheckedInDetails extends Component {
 
     componentDidMount() {
 
-        axios.get(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/api/getRegisteredUsersDetails/${this.state.eventId}`)
-        .then(res => {
-            this.setState({users:res.data});
-        })
-        .catch(err => console.log(err));
-    }
+}
 
 
   render() {
+    
     return (
-      <React.Fragment>
-        <p>The following users are checked in to the event</p>
-      </React.Fragment>
+        <React.Fragment>
+        <div className="sub-body-EventDetails">
+            <div className="EventDetails">
+                <p>This feature is currently unavailable.</p>
+            </div>
+        </div>
+    </React.Fragment>
     )
   }
 
+
 }
+
 export default ViewCheckedInDetails;

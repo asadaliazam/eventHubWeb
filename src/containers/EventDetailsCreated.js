@@ -105,10 +105,10 @@ class EventDetailsCreated extends Component {
                     <p className="eventDes">{event.eventType}</p>
 
                     <h6 className="eventDes">Registered Users</h6>
-                    <p className="eventDes">{this.state.registeredUsers} |  <a href={`viewRegisteredDetails/${eventId}`}>View Details</a></p>
+                    <p className="eventDes">{this.state.registeredUsers} |  <a href={`/viewRegisteredDetails/${eventId}`}>View Details</a></p>
 
                     <h6 className="eventDes">CheckedIn Users</h6>
-                    <p className="eventDes">{this.state.checkedInUsers} |  <a href={`viewCheckedInDetails/${eventId}`}>View Details</a></p>
+                    <p className="eventDes">{this.state.checkedInUsers} |  <a href={`/viewCheckedInDetails/${eventId}`}>View Details</a></p>
 
                    
 

@@ -47,16 +47,13 @@ export default class Signup extends Component {
 axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/api/addUser`, { userData })
       .then(res => {
         console.log(res.data);
-      })
-    .catch((error) => {
-      console.log(error);
-    });
-    reactLocalStorage.set('email', userData.email);
+        reactLocalStorage.set('email', userData.email);
     let data = {
       email:userData.email,
     }
     axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/api/checkLogin`, { data })
       .then(res => {
+        console.log(res.data);
         reactLocalStorage.set('firstLogin', res.data[0].firstLogin);
         this.props.userHasAuthenticated(true);
         this.props.history.push("/personalitySurvey");
@@ -64,6 +61,11 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
     .catch((error) => {
       console.log(error);
     });
+      })
+    .catch((error) => {
+      console.log(error);
+    });
+    
   }
 
   validateConfirmationForm() {

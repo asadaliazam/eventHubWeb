@@ -51,9 +51,9 @@ export default ({ childProps }) =>
     <AuthenticatedRoute path="/preferences" exact component={Preferences} props={childProps} />
     <AuthenticatedRoute path="/eventDetailsCreated/:id" exact component={EventDetailsCreated} props={childProps} />
 
-    <AuthenticatedRoute path="/viewCheckedInDetails/:id" exact component={ViewCheckedInDetails} props={childProps} />
+    <AuthenticatedRoute path="/viewCheckedInDetails/:id" exact component={NotFound} props={childProps} />
 
-    <AuthenticatedRoute path="/viewRegisteredDetails/:id" exact component={ViewRegisteredDetails} props={childProps} />
+    <AuthenticatedRoute path="/viewRegisteredDetails/:id" exact component={NotFound} props={childProps} />
 
 
 
