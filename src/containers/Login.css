@@ -62,7 +62,7 @@ button {
 
   display: flex;
   flex-direction: column;
-  position: relative;
+  
   align-items: center;
   justify-content: center;
 }
@@ -94,9 +94,11 @@ button {
 
 .sub-body-login{
   
-    margin-bottom: 18%;
+  min-height: -webkit-fill-available
   
 }
+
+
 
 @media screen and (min-width:530px) {
   .Login {
@@ -114,6 +116,7 @@ button {
     padding-right: 7rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-top: 10%;
   }
 
 

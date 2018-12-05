@@ -11,14 +11,24 @@ button img {
   margin-right: 10px;
 }
 
-.sub-body-signup{
-  margin-bottom: 18%;
+.SignUpPage{
+  
+  min-height: -webkit-fill-available;
+  
+  margin-bottom: 5%;
 }
 
-@media screen and (min-width:530px) {
+@media screen and (min-width:730px) {
   .SignUp, .Confirmation {
     margin-left: auto;
     margin-right: auto;
+    
   }
+
+  .LoginContent{
+
+    margin-top: 5%;
+  }
+
 
 }

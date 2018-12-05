@@ -148,7 +148,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
   renderForm() {
     return (
       <div className="sub-body-signup">
-        <div className="SignUp">
+        <div className="SignUpPage">
 
         <div className="LoginBackground">
         <div className="gradient-login"></div>
