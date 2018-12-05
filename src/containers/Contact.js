@@ -6,7 +6,7 @@ import LoaderButton from "../components/LoaderButton";
 class Contact extends Component {
   render() {
     return (
-      <div className="sub-body">
+      <div className="sub-body-contact">
         <div className="Contact">
           <h3>Contact Us</h3>
           <form>

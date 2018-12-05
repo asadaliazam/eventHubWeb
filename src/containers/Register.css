@@ -19,6 +19,10 @@
   padding-top: 10px;
 }
 
+.RegistrationBody{
+  min-height:-webkit-fill-available;
+}
+
 @media screen and (min-width:530px) {
   .calendars {
     margin-left: auto;
@@ -26,7 +30,6 @@
     margin-top: 5%;
     max-width: 40%;
   }
-  .RegistrationBody{
-    min-height:-webkit-fill-available;
-  }
+  
+  
 }

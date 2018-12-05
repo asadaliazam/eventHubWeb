@@ -56,18 +56,20 @@ h6 {
   margin-bottom: 18%;
 }
 
+
+.profile-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap:5px;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width:530px) {
   .MyProfile {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .profile-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:5px;
-    margin-bottom: 10px;
-  }
 
   .tags {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
