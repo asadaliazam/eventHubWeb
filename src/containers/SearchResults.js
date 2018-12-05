@@ -9,7 +9,7 @@ import moment from 'moment';
       console.log(events);
 
     return (
-      <div className="body">
+      <div className="body-search">
         <div className="content">
           <h3>Search Results</h3>
           {events.map(event =>
