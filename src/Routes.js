@@ -20,6 +20,9 @@ import PersonalityTest from "./containers/PersonalityTest";
 import ProfilePage from "./containers/ProfilePage";
 import DiscoverNow from "./containers/DiscoverNow";
 import Preferences from "./containers/Preferences";
+import EventDetailsCreated from "./containers/EventDetailsCreated";
+import ViewCheckedInDetails from "./containers/ViewCheckedInDetails";
+import ViewRegisteredDetails from "./containers/ViewRegisteredDetails";
 
 
 
@@ -46,6 +49,11 @@ export default ({ childProps }) =>
     <AuthenticatedRoute path="/profile" exact component={ProfilePage} props={childProps} />
     <AuthenticatedRoute path="/discover" exact component={DiscoverNow} props={childProps} />
     <AuthenticatedRoute path="/preferences" exact component={Preferences} props={childProps} />
+    <AuthenticatedRoute path="/eventDetailsCreated/:id" exact component={EventDetailsCreated} props={childProps} />
+
+    <AuthenticatedRoute path="/viewCheckedInDetails/:id" exact component={ViewCheckedInDetails} props={childProps} />
+
+    <AuthenticatedRoute path="/viewRegisteredDetails/:id" exact component={ViewRegisteredDetails} props={childProps} />
 
 
 

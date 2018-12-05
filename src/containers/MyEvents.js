@@ -92,7 +92,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
               <div className="content">
                 <h3> Created Events</h3>
                 {this.state.createdEvents.map(event =>
-                  <a key={event.eventId} href={`eventDetails/${event.eventId}`}>
+                  <a key={event.eventId} href={`eventDetailsCreated/${event.eventId}`}>
                     <div className="Events">
                       <div className="event-image">
                         <img src={`${event.eventPicture}`} alt="event" />
