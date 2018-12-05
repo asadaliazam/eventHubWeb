@@ -11,6 +11,10 @@ button img {
   margin-right: 10px;
 }
 
+.sub-body-signup{
+  margin-bottom: 18%;
+}
+
 @media screen and (min-width:530px) {
   .SignUp, .Confirmation {
     margin-left: auto;

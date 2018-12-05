@@ -58,7 +58,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="sub-body">
+      <div className="sub-body-login">
         <div className="Login">
 
         <div className="LoginBackground">
