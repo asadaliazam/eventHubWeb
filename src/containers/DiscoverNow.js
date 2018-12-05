@@ -30,7 +30,7 @@ class DiscoverNow extends Component {
       console.log(error);
     });
 
-    axios.get(`http://cors-anywhere.herokuapp.com/https://api.meetup.com/find/upcoming_events?photo-host=secure&page=10&end_time_range=20%3A00%3A00&sig_id=263681792&radius=20&start_time_range=16%3A00%3A00&sig=022e48d732ed0fdde339029a65036a8cc80a7c1b
+    axios.get(`https://cors-anywhere.herokuapp.com/https://api.meetup.com/find/upcoming_events?photo-host=secure&page=10&end_time_range=20%3A00%3A00&sig_id=263681792&radius=20&start_time_range=16%3A00%3A00&sig=022e48d732ed0fdde339029a65036a8cc80a7c1b
     `)
       .then(res => {
         console.log(res.data.events);
@@ -41,7 +41,7 @@ class DiscoverNow extends Component {
       console.log(error);
     });
 
-    axios.get(`http://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?q=music&sort_by=best&location.latitude=49.246292&location.longitude=-123.116226&price=free&token=P6J4XRUIK64T2MOIL3MX
+    axios.get(`https://cors-anywhere.herokuapp.com/https://www.eventbriteapi.com/v3/events/search/?q=music&sort_by=best&location.latitude=49.246292&location.longitude=-123.116226&price=free&token=P6J4XRUIK64T2MOIL3MX
     `)
       .then(res => {
         console.log(res.data.events);
