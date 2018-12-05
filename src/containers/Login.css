@@ -73,6 +73,7 @@ button {
   background-color: white;
   border-radius: 2%;
   margin-bottom: 5rem;
+  z-index: 1;
   
 }
 
