@@ -209,8 +209,6 @@ class CreateEvent extends Component {
               <DateTimePicker
               onChange={this.onChangeStartDate.bind(this)}
               value={this.state.eventStartTime}
-              minDate= {new Date()}
-              maxDetail = 'minute'
               />
             </FormGroup>
 
@@ -219,8 +217,6 @@ class CreateEvent extends Component {
               <DateTimePicker
               onChange={this.onChangeEndDate.bind(this)}
               value={this.state.eventEndTime}
-              minDate= {new Date()}
-              maxDetail = 'minute'
               />
             </FormGroup>
 
