@@ -80,8 +80,9 @@ class Register extends Component {
       }
 
     return (
-      <div className="sub-body">
+      <div className="RegistrationBody">
         <div className="calendars">
+
             {button}
             <AddToCalendar event={this.state.eventToAdd} listItems = {[ { apple: 'Apple Calendar' }, { google: 'Google' } ]}  displayItemIcons = {false}  />
         </div>

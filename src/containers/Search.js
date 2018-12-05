@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import './Search.css'
 import { Redirect } from 'react-router'
-import { FormGroup, FormControl } from 'react-bootstrap';
+import { FormGroup, FormControl, Label, InputGroup } from 'react-bootstrap';
 import Geosuggest from 'react-geosuggest';
 
 class Search extends Component {
@@ -79,7 +79,6 @@ class Search extends Component {
             }} />)
         }
         return (
-            <div className="card card-body mb-4 p-4">
                 <form className="Search" onSubmit={this.findEvent.bind(this)}>
                     <FormGroup>
                         <FormControl className="suggestion" type="text" placeholder="What"
@@ -90,12 +89,17 @@ class Search extends Component {
                     </FormGroup>
 
                     <FormGroup>
-                        <Geosuggest className="suggestion"
+
+                        
+                       
+                        <Geosuggest className="suggestion Geo"
                             placeholder='Where'
                             country='ca'
                             value={this.state.eventLocation}
-                            onSuggestSelect={this.onSuggestSelect.bind(this)}
-                        />
+                            onSuggestSelect={this.onSuggestSelect.bind(this)}/>
+                            
+                       
+                        
                     </FormGroup>
 
                     <FormGroup>
@@ -103,13 +107,12 @@ class Search extends Component {
                             value={this.state.timeTerm}
                             onChange={this.handleChange}
                             name="timeTerm">
-                            {timeOptions}
-                        </FormControl>
+                            {timeOptions}>
+                            </FormControl>
                     </FormGroup>
 
-                    <button className="btn btn-primary btn-lg btn-block mb-5" type="submit"><i className="fas fa-search"></i></button>
+                    <button className="btnSearch" type="submit"><i className="fas fa-search"></i></button>
                 </form>
-            </div>
         );
     }
 

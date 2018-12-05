@@ -59,7 +59,7 @@ class EventDetails extends Component {
 
     return (
       <React.Fragment>
-        <div className="sub-body">
+        <div className="sub-body-EventDetails">
           <div className="EventDetails">
             {this.state.event.map(event =>
                 <div key={event.eventId}>
@@ -78,12 +78,18 @@ class EventDetails extends Component {
                     </div>
                   </div>
                   <div className="bottom-half">
-                    <h6>Event Description</h6>
-                    <p>{event.eventDescription}</p>
-                    <h6>Event Topic</h6>
-                    <p>{event.eventTopic}</p>
-                    <h6>Event Type</h6>
-                    <p>{event.eventType}</p>
+                    <h6 className="eventDes">Event Description</h6>
+                    <p className="eventDes">{event.eventDescription}</p>
+                    <h6 className="eventDes">Event Topic</h6>
+                    <p className="eventDes">{event.eventTopic}</p>
+                    <h6 className="eventDes">Event Type</h6>
+                    <p className="eventDes">{event.eventType}</p>
+                    
+{/* 
+                    {event.eventTags.map(tag => 
+                    <li> {tag} </li>
+                    )} */}
+
                     <div className="google-location">
                       <GoogleMap location={location} />
                     </div>

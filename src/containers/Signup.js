@@ -151,7 +151,7 @@ axios.post(`https://us-central1-testingexpress-216900.cloudfunctions.net/test/ap
         <div className="SignUp">
 
         <div className="LoginBackground">
-        <div class="gradient-login"></div>
+        <div className="gradient-login"></div>
 
         <div className="Loginimage">
         
