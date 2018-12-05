@@ -1,3 +1,36 @@
 .bottom-half {
   margin-bottom: 25rem;
 }
+
+.top-half{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sub-body-EventDetails{
+
+  background-color: white;
+}
+
+.EventDetails{
+  background-color: #edf6f9;
+  max-width: 80%;
+  margin: auto;
+}
+
+.event-image img{
+  width: 100%;
+}
+
+.event-details{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventDes{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

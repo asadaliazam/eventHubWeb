@@ -47,6 +47,15 @@ h6 {
   grid-gap:10px;
 }
 
+.profile-image img{
+  width: 100%;
+  margin: auto;
+}
+.MyProfile{
+  margin-top: 5%;
+  margin-bottom: 18%;
+}
+
 @media screen and (min-width:530px) {
   .MyProfile {
     margin-left: auto;

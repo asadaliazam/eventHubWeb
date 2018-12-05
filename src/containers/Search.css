@@ -2,16 +2,64 @@
   width: 50px; 
 }
 
-@media screen and (min-width:530px) {
+.Geo{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.Geo input{
+  width: 100%;
+  border: 0;
+}
+
+.form-group{
+  margin: 5%;
+}
+
+.btnSearch{
+
+  margin-left: auto;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 58%;
+  text-align: center;
+  color: white;
+  background-color: #02b3e4;
+  margin-top:0; 
+
+}
+
+.btnSearch i{
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width:730px) {
   .Search {
+    width: 100%;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
+  .form-group{
+    align-self: center;
   }
 
   .Search .btn {
     margin: auto;
-    max-width: 50px;
     height: auto;
   }
 }

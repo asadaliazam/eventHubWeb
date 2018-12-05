@@ -222,16 +222,12 @@ export default class Home extends Component {
         </div>
         <div className="bannerTextForHome">
         <div className = "textContainerForHome">
-        {/* <Link className="buttontype discover" to={`/discover`}>Discover Now</Link> */}
+        <div className = "discoverNowButton">
+        <Link className="buttontype discover" to={`/discover`}>Discover Now</Link></div>
+        
         <div className="mid-nav">
           <Search/>
-          <DatePicker
-            onChange={this.onChange}
-            value={this.state.date}
-            clearIcon = {null}
-            calendarIcon = {<Calendar />}
-            
-          />
+          
         </div>
         </div>
         </div>
@@ -242,6 +238,13 @@ export default class Home extends Component {
         </div> */}
         
         <div className="body">
+        <DatePicker
+            onChange={this.onChange}
+            value={this.state.date}
+            clearIcon = {null}
+            calendarIcon = {<Calendar />}
+            
+          />
           <div className="content">
             <h3>Suggested Events</h3>
             {this.state.event_list.map(event =>
